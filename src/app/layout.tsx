@@ -11,6 +11,11 @@ const fira = Fira_Code({
   display: "swap",
 });
 
+export const metadata = {
+  title: "Ahmed Shawky | Portfolio",
+  description: "Welcome to my portfolio ",
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fira.variable} dark`} suppressHydrationWarning={true} >
