@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:is(.dark *));
-:root {
+@theme {
   --color-back: #282c33;
   --color-grey: #abb2bf;
   --color-text: #2c2f33;

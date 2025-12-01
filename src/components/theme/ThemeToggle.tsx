@@ -1,7 +1,8 @@
 "use client";
 
-import { Moon, Sun } from "lucide-react";
+
 import { useTheme } from "next-themes";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -12,9 +13,9 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={Toggle}
-      className="px-3 py-2 text-yellow-500 rounded"
+      className="px-3 py-2 text-yellow-500 rounded cursor-pointer"
     >
-      {theme === "dark" ? <Sun className="text-yellow-500" /> : <Moon className="text-white" />}
+      {theme === "dark" ? <FaSun className="text-yellow-500" /> : <FaMoon className="text-white" />}
     </button>
   );
 }

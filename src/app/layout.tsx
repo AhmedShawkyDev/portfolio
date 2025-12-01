@@ -1,7 +1,7 @@
-import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import { Fira_Code } from "next/font/google";
-import Header from "../components/header/Header";
+import { headers } from "next/headers";
+import { routing } from "@/routing";
 
 
 const fira = Fira_Code({
@@ -16,14 +16,14 @@ export const metadata = {
   description: "Welcome to my portfolio ",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headersList = await headers()
+  const currentLocale =
+    headersList.get("x-next-intl-locale") || routing.defaultLocale;
   return (
-    <html lang="en" className={`${fira.variable} dark`} suppressHydrationWarning={true} >
+    <html lang={currentLocale} dir={currentLocale === "ar" ? "rtl" : "ltr"} className={`${fira.variable} dark`} suppressHydrationWarning={true} >
       <body suppressHydrationWarning={true}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );
