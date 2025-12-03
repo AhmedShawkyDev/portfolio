@@ -1,0 +1,13 @@
+{
+  "home": {
+    "title": "welcome"
+  },
+  "herosection": {
+    "Name": "My Name is",
+    "Ahmed": "Ahmed Shawky",
+    "and": "and I am a",
+    "developer": "front-end developer",
+    "description": "Frontend developer passionate about turning ideas into seamless digital experiences. Enthusiastic about React and building modern, practical applications.",
+    "contact": "Contact Me !!"
+  }
+}
