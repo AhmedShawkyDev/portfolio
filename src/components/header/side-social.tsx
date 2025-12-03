@@ -14,7 +14,7 @@ export default function SideSocial() {
       <ul className="flex flex-col gap-1.5 justify-center items-center ">
         {social.map((icons) => {
           return (
-            <li key={icons.id} className="hover:text-primary w-8 h-8 ml-4">
+            <li key={icons.id} className="hover:text-primary w-8 h-8 ml-3.5">
               <a href={icons.path} target="_blank" rel="noopener noreferrer">{icons.icon}</a>
             </li>
           )

@@ -1,6 +1,9 @@
+import Link from "next/link";
 import Container from "./container";
 import { social } from "./header/side-social";
+import { useLocale } from "next-intl";
 export default function Footer() {
+  const locale = useLocale();
   return (
     <>
       <div className="w-full h-px bg-primary-text"></div>
@@ -24,7 +27,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <p className="text-lg text-primary-text">© Copyright 2025. Made by Me</p>
+          <p className="text-lg text-primary-text">© Copyright 2025. Made by
+            <Link href={`/${locale}/`} className="text-primary"> Me</Link>
+          </p>
 
         </div>
 
