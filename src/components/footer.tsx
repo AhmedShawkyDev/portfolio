@@ -1,20 +1,22 @@
 import Link from "next/link";
 import Container from "./container";
 import { social } from "./header/side-social";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 export default function Footer() {
   const locale = useLocale();
+  const t = useTranslations("footer");
+
   return (
     <>
       <div className="w-full h-px bg-primary-text"></div>
       <Container className="h-56  flex-col  gap-12 py-8">
         <div className="flex justify-between w-full">
           <div className="flex-col  items-start">
-            <p className="text-lg font-medium text-foreground">Ahmed Shawky</p>
-            <p className="text-lg font-medium text-foreground">front-end developer</p>
+            <p className="text-lg font-medium text-foreground">{t("name")}</p>
+            <p className="text-lg font-medium text-foreground">{t("developer")}</p>
           </div>
           <div className="flex flex-col items-center gap-3">
-            <p className="text-lg font-medium text-foreground">Social</p>
+            <p className="text-lg font-medium text-foreground">{t("social")}</p>
             <ul className=" flex">
               {social.map((icons) => {
                 return (
@@ -27,8 +29,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <p className="text-lg text-primary-text">© Copyright 2025. Made by
-            <Link href={`/${locale}/`} className="text-primary"> Me</Link>
+          <p className="text-lg text-primary-text">{t("copy")}
+            <Link href={`/${locale}/`} className="text-primary"> {t("me")}</Link>
           </p>
 
         </div>

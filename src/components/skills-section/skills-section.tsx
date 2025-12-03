@@ -20,7 +20,10 @@ export default function SkillsSection() {
     { id: 2, title: "GitHub" },
     { id: 3, title: "Vscode" },
     { id: 4, title: "shadcn/ui" },
-    { id: 4, title: "Font Awesome" },
+    { id: 5, title: "Font Awesome" },
+    { id: 6, title: "slugify" },
+    { id: 7, title: "Metadata Management" },
+    { id: 8, title: "XSS library" },
   ]
 
   const Framwork = [
@@ -28,38 +31,20 @@ export default function SkillsSection() {
     { id: 2, title: "Next.js" },
   ]
 
-  return <Container className=" w-full  h-screen gap-14">
+  return <div className="flex flex-col w-full gap-14">
     <div className="flex flex-row justify-between! items-center gap-6 w-full">
       <div className="flex flex-row items-center gap-5">
         <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
           <span className="text-primary ">#</span> Skills</h1>
-        <div className="w-lvh h-px  bg-primary "></div>
       </div>
     </div>
-    <div className="flex flex-row justify-between w-full">
-      <div className="w-1/3 grid grid-cols-4 grid-rows-3 items-center">
-        <div className="col-start-1 row-start-1">
-          <div className="border border-primary w-16 h-16"></div>
-        </div>
-        <div className="col-start-3 row-start-2">
-          <Dots />
-        </div>
-        <div className="col-start-4 row-start-2">
-          <Dots />
-        </div>
-        <div className="col-start-3 row-start-3 ">
-          <Dots className="bg-primary!" />
-        </div>
-      </div>
-      <div className="w-2/3 grid grid-cols-3 grid-rows-3 gap-4">
-        <div className="col-start-1 row-start-1"><SkillsCard data={Lang} name="Languages" /></div>
-        <div className="col-start-2 row-start-1"><SkillsCard data={Other} name="Others" /></div>
-        <div className="col-start-2 row-start-2"><SkillsCard data={Tool} name="Tools" /></div>
-        <div className="col-start-3 row-start-2"><SkillsCard data={Framwork} name="Framworks" /></div>
-
-      </div>
+    <div className="flex justify-center w-full gap-4">
+      <SkillsCard data={Lang} name="Languages" />
+      <SkillsCard data={Other} name="Others" />
+      <SkillsCard data={Tool} name="Tools" />
+      <SkillsCard data={Framwork} name="Framworks" />
     </div>
 
 
-  </Container>;
+  </div>;
 }

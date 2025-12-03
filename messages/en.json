@@ -9,5 +9,59 @@
     "developer": "front-end developer",
     "description": "Frontend developer passionate about turning ideas into seamless digital experiences. Enthusiastic about React and building modern, practical applications.",
     "contact": "Contact Me !!"
+  },
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "about-me": "About Me",
+    "contacts": "Contacts",
+    "welcome": "Welcome"
+  },
+  "projects_section": {
+    "projects": "Projects",
+    "view": "View more",
+    "live": "Live",
+    "projects_data": [
+      {
+        "id": 1,
+        "title": "R&H Capital",
+        "description": "Discover top-tier real estate opportunities with Capital H&R – Dubai's trusted consultancy for off-plan, ready-to-move, and luxury properties. Transparent, expert-driven solutions.",
+        "tools": "React, Redux, and Tailwind CSS with framework Next.js"
+      },
+
+      {
+        "id": 2,
+        "title": "ROIA",
+        "description": "ROIA is the UAE's leading smart film and switchable glass company, delivering PDLC film, privacy glass, and glass tinting across Dubai, Abu Dhabi, Sharjah & all Emirates. Enjoy instant privacy, UV protection, energy efficiency, elegant design, and a 2-year warranty — for homes, offices, hotels, villas, clinics & retail spaces.",
+        "tools": "React ,Redux and Tailwind CSS with framework Next.js"
+      },
+      {
+        "id": 3,
+        "title": "Agilova",
+        "description": "RealState Project for states trading in UAE",
+        "tools": "React, Redux, and Tailwind CSS with framework Next.js"
+      }
+    ]
+  },
+  "about_section": {
+    "about": "About Me",
+    "hello": "Hello, i’m Ahmed Shawky !",
+    "study": "I’m a self-taught front-end developer based in Mansoura , Egypt. And live now in jeddah, Saudia Arabia. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.",
+    "trans": "Transforming my creativity and knowledge into a websites has been my passion for over a year.  I have been helping various clients to establish their presence online.  I always strive to learn about the newest technologies and frameworks.",
+    "read": "Read More"
+  },
+  "contact_section": {
+    "contacts": "Contacts",
+    "description": "I’m currently seeking a front-end developer position or freelance opportunity. However, if you have other request or question, don’t hesitate to contact me",
+    "message": "Message Me",
+    "whatsapp": "What's App",
+    "mail": "Email"
+  },
+  "footer": {
+    "name": "Ahmed Shawky",
+    "developer": "Front-end developer",
+    "social": "Social",
+    "copy": "Designed & Developed by 👉",
+    "me": "Me"
   }
 }
