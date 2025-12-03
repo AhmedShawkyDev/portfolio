@@ -11,7 +11,7 @@ export default function AboutMeSection() {
 
   return (
 
-    <Container className="w-full h-screen gap-14">
+    <div className=" flex flex-col w-full h-screen gap-14">
       <SectionTitle title={t("about")} />
 
       <div className="flex w-full justify-between items-center">
@@ -37,6 +37,6 @@ export default function AboutMeSection() {
         </div>
 
       </div>
-    </Container >
+    </div >
   );
 }

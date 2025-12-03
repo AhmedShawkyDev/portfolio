@@ -7,14 +7,13 @@ import Card from "../card";
 import rh from "@/src/assets/r_h.png"
 import roia from "@/src/assets/roia.png"
 import agilova from "@/src/assets/agilova.png"
+
 export default function ProjectSection() {
+
   const t = useTranslations("projects_section");
-
   const locale = useLocale();
-
-
-
   const projects = [
+
     {
       id: 1, title: t("projects_data.0.title"),
       path: "https://rhcapital.ae/en",
@@ -35,7 +34,7 @@ export default function ProjectSection() {
       image: agilova,
       description: t("projects_data.2.description"),
       tools: t("projects_data.2.tools"),
-    },
+    }
   ]
 
   return (
