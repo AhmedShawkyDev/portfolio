@@ -14,14 +14,22 @@ export default function ContactsSection() {
         However, if you have other request or question, don’t hesitate to contact me</p>
       <div className="border border-grey p-4 flex flex-col justify-end gap-4 w-fit">
         <p className="">Message Me --</p>
-        <div className="flex items-center gap-1.5">
+        <a href="https://wa.me/966561417008"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 hover:text-primary">
           <FaWhatsapp className="w-5 h-5" />
-          <a href="https://wa.me/966561417008" className="">What's App</a>
-        </div>
-        <div className="flex  items-center gap-1.5">
+          What's App
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=ahmed.shawky.elnabawy@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 hover:text-primary"
+        >
           <MdEmail className="w-5 h-5" />
-          <a href="mailto:ahmed.shawky.elnabawy@gmail.com" className="">Mail</a>
-        </div>
+          Mail
+        </a>
       </div></div>
 
   </Container>
