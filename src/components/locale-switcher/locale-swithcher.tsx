@@ -10,7 +10,7 @@ export default function LocaleSwitcher({ locale }: { locale: string }) {
   return (
     <div className="flex">
       <a href={newPath} >
-        <span className="text-white">{oppositeLocale.toUpperCase()}</span>
+        <span className={`text-white cursor-pointer `}>{oppositeLocale.toUpperCase()}</span>
       </a>
     </div>
   )

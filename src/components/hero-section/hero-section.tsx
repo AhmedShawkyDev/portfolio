@@ -19,12 +19,16 @@ export default function HeroSection() {
           {t("and")}
           <span className="text-primary"> {t("developer")} </span>
         </div>
-        <p className="text-lg text-primary-text font-medium w-3/4">
+        <p className="text-xl text-primary-text font-medium w-3/4">
           {t("description")}
         </p>
-        <Link href={`/${locale}/contacts`} className="border px-4 py-2 border-primary w-fit hover:bg-primary">{t("contact")}</Link>
+        <Link
+          href={`/${locale}/contacts`}
+          className="border px-4 py-2 border-primary w-fit hover:bg-primary">{t("contact")}</Link>
       </div>
-      <Link href={`/${locale}/about-me`} className="w-1/3">
+      <Link
+        href={`/${locale}/about-me`}
+        className="w-1/3">
         <Image src={hero} alt="Ahmed Shawky" width={400} height={400} />
       </Link>
     </Container>

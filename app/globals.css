@@ -10,6 +10,8 @@
   --foreground: #f5f5f5;
   --color-primary: #c778dd;
   --color-primary-text: #abb2bf;
+  --font-fira-code: "Fira Code";
+  --font-cairo: "Cairo";
 }
 
 .light {

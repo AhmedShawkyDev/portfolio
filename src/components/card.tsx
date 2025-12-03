@@ -1,5 +1,6 @@
+import { useLocale, useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
-import { RiArrowRightDoubleLine } from "react-icons/ri";
+import { RiArrowLeftDoubleLine, RiArrowRightDoubleLine } from "react-icons/ri";
 
 interface CardProps {
 
@@ -10,6 +11,8 @@ interface CardProps {
   tools: string
 }
 export default function Card({ title, path, image, description, tools }: CardProps) {
+  const locale = useLocale();
+  const t = useTranslations("projects_section");
   return (
     <div className="flex flex-col border border-grey ">
       <div className="w-full h-56">
@@ -21,7 +24,9 @@ export default function Card({ title, path, image, description, tools }: CardPro
       <div className="flex flex-col py-4 px-4 gap-4 ">
         <p className="text-2xl text-foreground">{title}</p>
         <p className="text-lg text-primary-text line-clamp-3 min-h-20">{description}</p>
-        <a href={path} target="_blank" className="border px-4 py-2 border-primary w-fit hover:bg-primary flex justify-center items-center">Live --- <RiArrowRightDoubleLine /></a>
+        <a href={path} target="_blank" className="border px-4 py-2 border-primary w-fit hover:bg-primary flex justify-center items-center">{t("live")} ---
+          {locale === "en" ? <RiArrowRightDoubleLine /> : <RiArrowLeftDoubleLine />}
+        </a>
       </div>
 
     </div>
