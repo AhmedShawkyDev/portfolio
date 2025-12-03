@@ -1,4 +1,5 @@
 import { locales } from "@/navigation";
+import Footer from "@/src/components/footer";
 import Header from "@/src/components/header/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "next-themes";
@@ -41,7 +42,7 @@ export default async function RootLayout({
           lang={currentLocale}
         >
           {children}
-
+          <Footer />
         </div>
       </ThemeProvider>
     </NextIntlClientProvider>

@@ -11,8 +11,11 @@ export default function HeroSection() {
   return (
     <Container className="flex-row gap-5 justify-between w-full h-screen">
       <div className="flex flex-col gap-6 w-2/3">
-        <div className="text-4xl text-foreground  flex flex-wrap gap-4 font-semibold">{t("Name")}
-          <span className="text-primary"> {t("Ahmed")} </span>
+        <div className="text-4xl text-foreground  flex flex-wrap gap-4 font-semibold flex-col">
+          <div className="flex gap-2">
+            <span className="">{t("Name")}</span>
+            <span className="text-primary"> {t("Ahmed")} </span></div>
+
           {t("and")}
           <span className="text-primary"> {t("developer")} </span>
         </div>
