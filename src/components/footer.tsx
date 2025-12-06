@@ -9,11 +9,18 @@ export default function Footer() {
   return (
     <>
       <div className="w-full h-px bg-primary-text"></div>
-      <Container className="h-56  flex-col  gap-12 py-8">
+      <Container className=" flex-col  gap-12 py-8">
         <div className="flex justify-between w-full">
           <div className="flex-col  items-start">
             <p className="text-lg font-medium text-foreground">{t("name")}</p>
             <p className="text-lg font-medium text-foreground">{t("developer")}</p>
+          </div>
+
+          <div className="flex justify-center items-center">
+            <p className="text-lg text-primary-text">{t("copy")}
+              <Link href={`/${locale}/`} className="text-primary"> {t("me")}</Link>
+            </p>
+
           </div>
           <div className="flex flex-col items-center gap-3">
             <p className="text-lg font-medium text-foreground">{t("social")}</p>
@@ -28,12 +35,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <p className="text-lg text-primary-text">{t("copy")}
-            <Link href={`/${locale}/`} className="text-primary"> {t("me")}</Link>
-          </p>
 
-        </div>
 
       </Container>
     </>
