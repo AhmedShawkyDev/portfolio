@@ -5,6 +5,7 @@ import ThemeToggle from "../theme/ThemeToggle"
 import LocaleSwitcher from "../locale-switcher/locale-swithcher"
 import SideSocial from "./side-social"
 import { useTranslations } from "next-intl"
+import { motion } from "framer-motion";
 
 interface HeaderProps {
   locale: string;
@@ -26,7 +27,13 @@ export default function Header({ locale }: HeaderProps) {
       <div className="bg-back  ">
 
         <div className="mx-44 flex justify-between items-center h-16 ">
-          <Link href="/" className="font-bold text-xl text-white">{t("welcome")} 👋</Link>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          ><Link href="/" className="font-bold text-xl text-white">{t("welcome")}
+              👋</Link></motion.div>
+
           <ul className="flex gap-8">
             {navLinks.map((link) => {
               return (

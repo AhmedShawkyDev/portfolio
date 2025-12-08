@@ -34,14 +34,14 @@ export default function SkillsSection() {
     <div className="flex flex-row justify-between! items-center gap-6 w-full">
       <div className="flex flex-row items-center gap-5">
         <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
-          <span className="text-primary ">#</span> Skills</h1>
+          <span className="text-primary ">#</span> {t("skills")}</h1>
       </div>
     </div>
     <div className="flex justify-center w-full gap-4">
-      <SkillsCard data={Lang} name="Languages" />
-      <SkillsCard data={Other} name="Others" />
-      <SkillsCard data={Framwork} name="Framworks" />
-      <SkillsCard data={Tool} name="Tools" />
+      <SkillsCard data={Lang} name={t("languages")} />
+      <SkillsCard data={Other} name={t("other")} />
+      <SkillsCard data={Framwork} name={t("framworks")} />
+      <SkillsCard data={Tool} name={t("tools")} />
     </div>
 
 

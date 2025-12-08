@@ -8,7 +8,8 @@
     "and": "and I am a",
     "developer": "front-end developer",
     "description": "Frontend developer passionate about turning ideas into seamless digital experiences. Enthusiastic about React and building modern, practical applications.",
-    "contact": "Contact Me !!"
+    "contact": "Contact Me !!",
+    "download": "Download CV"
   },
   "header": {
     "home": "Home",
@@ -96,5 +97,16 @@
     "fitness": "Fitness/gym",
     "gaming": "Gaming",
     "anime": "Anime"
+  },
+  "contacts": {
+    "contacts": "Contacts",
+    "who": "Who am i ?",
+    "description": "I’m currently seeking a front-end developer position or freelance opportunity. However, if you have other request or question, don’t hesitate to contact me.",
+    "contact": " Contact with Email too !",
+    "name": "Name",
+    "email": "Email",
+    "title": "Title",
+    "message": "Message",
+    "submit": "Submit"
   }
 }
