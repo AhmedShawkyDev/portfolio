@@ -15,8 +15,8 @@ export default function AboutPage() {
   return (
     <Container className="mt-14 items-start! gap-16 ">
       <PageTitle title={t2("about_me")} description={t2("who")} />
-      <div className="flex w-full justify-between items-center">
-        <div className="flex flex-col gap-7 w-1/2">
+      <div className="flex flex-col lg:flex-row w-full justify-between items-center gap-10">
+        <div className="flex flex-col gap-10 w-full lg:w-1/2">
           <div className=" flex flex-col gap-6">
             <p className="text-xl text-foreground font-medium">{t("hello")}</p>
             <p className="text-xl text-primary-text font-medium">
@@ -27,10 +27,9 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        <div className="w-1/2 flex justify-end">
+        <div className="w-full lg:w-1/2 flex justify-center xl:justify-end">
           <Image src={heroo} alt="Ahmed Shawky" width={400} height={400} />
         </div>
-
       </div>
       <SkillsSection />
       <MyHoppies />

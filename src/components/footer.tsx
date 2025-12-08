@@ -7,11 +7,11 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <>
+    <footer>
       <div className="w-full h-px bg-primary-text"></div>
-      <Container className=" flex-col  gap-12 py-8">
-        <div className="flex justify-between w-full">
-          <div className="flex-col  items-start">
+      <Container className="  flex-col  gap-12 py-2 lg:py-8 lg:flex-row mt-10!">
+        <div className="flex flex-col lg:flex-row justify-between w-full gap-4">
+          <div className=" flex flex-col  items-center lg:items-start">
             <p className="text-lg font-medium text-foreground">{t("name")}</p>
             <p className="text-lg font-medium text-foreground">{t("developer")}</p>
           </div>
@@ -38,6 +38,6 @@ export default function Footer() {
 
 
       </Container>
-    </>
+    </footer>
   )
 }

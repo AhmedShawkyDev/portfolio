@@ -30,20 +30,21 @@ export default function SkillsSection() {
     { id: 2, title: "Next.js" },
   ]
 
-  return <div className="flex flex-col w-full gap-14">
-    <div className="flex flex-row justify-between! items-center gap-6 w-full">
-      <div className="flex flex-row items-center gap-5">
-        <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
-          <span className="text-primary ">#</span> {t("skills")}</h1>
+  return (
+    <div className="flex flex-col w-full gap-14">
+      <div className="flex flex-row justify-between! items-center gap-6 w-full">
+        <div className="flex flex-row items-center gap-5">
+          <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
+            <span className="text-primary ">#</span> {t("skills")}</h1>
+        </div>
       </div>
-    </div>
-    <div className="flex justify-center w-full gap-4">
-      <SkillsCard data={Lang} name={t("languages")} />
-      <SkillsCard data={Other} name={t("other")} />
-      <SkillsCard data={Framwork} name={t("framworks")} />
-      <SkillsCard data={Tool} name={t("tools")} />
-    </div>
-
-
-  </div>;
+      {/* <div className="flex justify-center w-full gap-4 "> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <SkillsCard data={Lang} name={t("languages")} />
+        <SkillsCard data={Other} name={t("other")} />
+        <SkillsCard data={Framwork} name={t("framworks")} />
+        <SkillsCard data={Tool} name={t("tools")} />
+      </div>
+    </div >
+  );
 }

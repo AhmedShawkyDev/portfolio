@@ -8,7 +8,7 @@ export default function LocaleSwitcher({ locale }: { locale: string }) {
   const newPath = `/${oppositeLocale}${pathname.replace(/^\/(en|ar)/, "")}`;
 
   return (
-    <div className="flex">
+    <div className="flex px-3 py-2">
       <a href={newPath} >
         <span className={`text-white cursor-pointer `}>{oppositeLocale.toUpperCase()}</span>
       </a>
