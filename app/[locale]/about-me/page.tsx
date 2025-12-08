@@ -6,18 +6,14 @@ import SkillsSection from "@/src/components/skills-section/skills-section";
 import MyHoppies from "@/src/components/about/my-hoppies";
 import Graduation from "@/src/components/about/graduation";
 import OtherSkills from "@/src/components/about/other-skills";
+import PageTitle from "@/src/components/page-title";
 
 export default function AboutPage() {
   const t = useTranslations("about_section");
 
   return (
     <Container className="mt-14 items-start! gap-16 ">
-      <div className="flex flex-col w-full gap-3.5">
-        <h1 className="flex gap-2 text-3xl text-foreground font-semibold">
-          <span className="text-primary">/</span>
-          About me</h1>
-        <p className="text-foreground text-lg font-medium">Who am I ?</p>
-      </div>
+      <PageTitle title="About me" description="Who am I ?" />
       <div className="flex w-full justify-between items-center">
         <div className="flex flex-col gap-7 w-1/2">
           <div className=" flex flex-col gap-6">

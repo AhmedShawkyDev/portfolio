@@ -1,9 +1,8 @@
-import Container from "../container";
-import Dots from "../dots";
+import { useTranslations } from "next-intl";
 import SkillsCard from "../skills-card";
 
 export default function SkillsSection() {
-
+  const t = useTranslations("about")
   const Lang = [
     { id: 1, title: "JavaScript" },
     { id: 2, title: "TypeScript" },
@@ -41,8 +40,8 @@ export default function SkillsSection() {
     <div className="flex justify-center w-full gap-4">
       <SkillsCard data={Lang} name="Languages" />
       <SkillsCard data={Other} name="Others" />
-      <SkillsCard data={Tool} name="Tools" />
       <SkillsCard data={Framwork} name="Framworks" />
+      <SkillsCard data={Tool} name="Tools" />
     </div>
 
 

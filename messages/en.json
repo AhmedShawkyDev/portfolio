@@ -63,5 +63,38 @@
     "social": "Social",
     "copy": "Designed & Developed by 👉",
     "me": "Me"
+  },
+  "projects": {
+    "projects": "Projects",
+    "complete": "Complete Projects",
+    "list": "List of my projects",
+    "proto": "A professional portfolio demonstrating my skills in front-end development, UI design, and building modern web experiences.",
+    "small": "Small Apps",
+    "prayer": "A modern Prayer Times app fast, clean, and easy to use.",
+    "recipe": "A responsive recipe website showcasing various dishes with individual pages for each recipe.",
+    "react-based": "A React app allowing users to create and view posts on the page via a modal form."
+  },
+  "about": {
+    "about_me": "About me",
+    "who": "Who am i ?",
+    "skills": "Skills",
+    "languages": "Languages",
+    "tools": "Tools",
+    "framworks": "Framworks",
+    "other": "Other",
+    "hobbies": "My Hobbies",
+    "certifications": "Certifications",
+    "faulty": "Faulty of Arts",
+    "graduated": "- Graduated from Mansoura University with a degree in oriantal languages.",
+    "it": "IT Share",
+    "full": "- Certificated course from IT share in full stack web development .",
+    "word": "- Word (professional documentation & reporting)",
+    "excel": "- Excel (formulas, pivot tables)",
+    "Office": "Office & Productifty Tools",
+    "learning": "Learning New Tools",
+    "coding": "Coding",
+    "fitness": "Fitness/gym",
+    "gaming": "Gaming",
+    "anime": "Anime"
   }
 }

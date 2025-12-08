@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl"
+
 export default function OtherSkills() {
+  const t = useTranslations("about")
   const other = [
-    { id: 1, title: "- Word (professional documentation & reporting)" },
-    { id: 2, title: "- Excel (formulas, pivot tables)" },
+    { id: 1, title: t("word") },
+    { id: 2, title: t("excel") },
 
   ]
   return (
@@ -9,7 +12,7 @@ export default function OtherSkills() {
       <div className="flex flex-row justify-between! items-center gap-6 w-full">
         <div className="flex flex-row items-center gap-5">
           <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
-            <span className="text-primary ">#</span> Office & Productifty Tools</h1>
+            <span className="text-primary ">#</span> {t("Office")}</h1>
         </div>
       </div>
       <ul className="flex flex-col">

@@ -4,21 +4,15 @@ import Container from "../container";
 import hero from "@/src/assets/hero.png";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-// import DownloadButton from "../download-pdf";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+
 
 
 
 export default function HeroSection() {
   const t = useTranslations("herosection");
   const locale = useLocale();
-  // const downloadPDF = () => {
-  //   const link = document.createElement("a");
-  //   link.href = "/public/Ahmed_Shawky.pdf"; // مسار صحيح
-  //   link.download = "Ahmed_Shawky.pdf"; // اسم التحميل
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+
   return (
     <Container className="flex-row gap-5 justify-between w-full h-screen">
       <div className="flex flex-col gap-6 w-2/3">
@@ -36,13 +30,14 @@ export default function HeroSection() {
         <div className="flex gap-4">
           <Link
             href={`/${locale}/contacts`}
-            className="border px-4 py-2 border-primary w-fit hover:bg-primary">{t("contact")}</Link>
-          {/* <Link href={`/${locale}/Ahmed_Shawky.pdf`} download className="border px-4 py-2 border-primary w-fit hover:bg-primary">
-            Download CV</Link> */}
-          {/* <DownloadButton /> */}
-          {/* <button onClick={downloadPDF}>
-            Download
-          </button> */}
+            className="border px-4 py-2 border-primary w-fit hover:bg-primary text-foreground">{t("contact")}</Link>
+
+          <a
+            className="border px-4 py-2 border-primary w-fit hover:bg-primary flex items-center gap-2 text-foreground"
+            target="_blank"
+            rel="noopener noreferrer"
+            download={true}
+            href="https://drive.google.com/file/d/1n-6YfCf1I5TKtAHNXBIzCNHgY-FpfNUh/view?usp=sharing">Download <FaCloudDownloadAlt /></a>
         </div>
       </div>
       <Link
