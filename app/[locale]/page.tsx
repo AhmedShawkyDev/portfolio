@@ -7,7 +7,7 @@ import ProjectSection from "@/src/components/project-section/project-section";
 export default function Page() {
 
   return (
-    <Container className="flex flex-col gap-28">
+    <Container className="flex flex-col gap-20 lg:gap-28">
       <HeroSection />
       <ProjectSection />
       <AboutMeSection />

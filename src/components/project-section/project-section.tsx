@@ -7,6 +7,7 @@ import Card from "../card";
 import rh from "@/src/assets/r_h.png"
 import roia from "@/src/assets/roia.png"
 import agilova from "@/src/assets/agilova.png"
+import SectionTitle from "../section-title";
 
 export default function ProjectSection() {
 
@@ -38,18 +39,14 @@ export default function ProjectSection() {
   ]
 
   return (
-    <Container className=" w-full  h-screen gap-14">
-      <div className="flex flex-row justify-between! items-center gap-6 w-full">
-        <div className="flex flex-row items-center gap-5">
-          <h1 className="text-4xl text-foreground font-semibold flex gap-2">
-            <span className="text-primary">#</span> {t("projects")}</h1>
-          <div className="w-lvh h-px  bg-primary "></div>
-        </div>
-        <Link href={`${locale}/projects`} className="text-lg flex items-center ">{t("view")} ---
+    <Container className=" w-full h-fit xl:h-screen gap-14">
+      <div className="flex flex-col lg:flex-row justify-between! items-center gap-6 w-full ">
+        <SectionTitle title={t("projects")} />
+        <Link href={`${locale}/projects`} className="text-lg flex items-center flex-nowrap w-full">{t("view")}
           {locale === "en" ? <RiArrowRightDoubleLine /> : <RiArrowLeftDoubleLine />}
         </Link>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
         {projects.map((project) => {
           return <Card key={project.id}
             title={project.title}

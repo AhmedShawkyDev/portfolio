@@ -11,8 +11,8 @@ export default function HeroSection() {
   const locale = useLocale();
 
   return (
-    <Container className="flex-row gap-5 justify-between w-full h-screen">
-      <div className="flex flex-col gap-6 w-2/3">
+    <Container className="lg:flex-row gap-5 justify-between w-full h-fit xl:h-screen mt-10 lg:mt-0">
+      <div className="flex flex-col gap-6 lg:w-2/3 w-full">
         <div className="text-4xl text-foreground  flex flex-wrap gap-4 font-semibold flex-col">
           <div className="flex gap-2">
             <span className="">{t("Name")}</span>
@@ -21,7 +21,7 @@ export default function HeroSection() {
           {t("and")}
           <span className="text-primary"> {t("developer")} </span>
         </div>
-        <p className="text-xl text-primary-text font-medium w-3/4">
+        <p className="text-xl text-primary-text font-medium lg:w-3/4 w-full">
           {t("description")}
         </p>
         <div className="flex gap-4">
@@ -39,8 +39,8 @@ export default function HeroSection() {
       </div>
       <Link
         href={`/${locale}/about-me`}
-        className="w-1/3">
-        <Image src={hero} alt="Ahmed Shawky" width={400} height={400} />
+        className="w-full lg:w-1/3">
+        <Image src={hero} alt="Ahmed Shawky" width={400} height={400} className="w-full h-full  object-cover" />
       </Link>
     </Container>
   )

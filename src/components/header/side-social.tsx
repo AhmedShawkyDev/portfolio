@@ -10,7 +10,7 @@ export const social = [
 export default function SideSocial() {
   const locale = useLocale();
   return (
-    <div className={`fixed flex flex-col top-0 justify-center items-center ${locale} === "ar" ? "right-8" :"left-8"`}>
+    <div className={`hidden fixed lg:flex flex-col top-0 justify-center items-center ${locale} === "ar" ? "right-8" :"left-8"`}>
       <div className="w-px h-48 bg-grey mb-4"></div>
       <ul className="flex flex-col gap-1.5 justify-center items-center ">
         {social.map((icons) => {
