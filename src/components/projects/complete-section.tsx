@@ -7,6 +7,7 @@ import portfolio from "@/src/assets/portifolio.png"
 import SmallAppsCard from "./small-apps-card";
 export default function CompleteSection() {
   const t = useTranslations("projects_section");
+  const t2 = useTranslations("projects");
   const projects = [
     {
       id: 1, title: t("projects_data.0.title"),
@@ -33,7 +34,7 @@ export default function CompleteSection() {
       id: 4, title: "Portfolio",
       path: "https://agilova.com/",
       image: portfolio,
-      description: "A professional portfolio demonstrating my skills in front-end development, UI design, and building modern web experiences.",
+      description: t2("proto"),
       tools: "React , typescript and Tailwind CSS with framework Next.js",
     }
   ]
@@ -43,50 +44,30 @@ export default function CompleteSection() {
       id: 1,
       title: "Paryer Times",
       path: "https://github.com/AhmedShawkyDev/prayerTimes",
-      description: "A modern Prayer Times app  fast, clean, and easy to use.",
+      description: t2("prayer"),
       tools: "Html,Css,Javascript,React, Axios, and React Router DOM ",
     },
     {
       id: 2,
       title: "Foodies Project",
       path: "https://github.com/AhmedShawkyDev/foodies-project",
-      description: "A responsive recipe website showcasing various dishes with individual pages for each recipe.",
-      tools: "Next.js, React, CSS, useRef, Custom Forms",
+      description: t2("recipe"),
+      tools: "Next.js, React, CSS, useRef, Custom Forms and Axios",
     },
     {
       id: 3,
       title: "React Posts",
       path: "https://github.com/AhmedShawkyDev/ReactPoster",
-      description: "A React-based app allowing users to create and view posts on the page via a modal form.",
+      description: t2("react-based"),
       tools: "React, React DOM (loader & action), Custom Modal Forms",
     },
-    {
-      id: 4,
-      title: "Paryer Times",
-      path: "https://github.com/AhmedShawkyDev/prayerTimes",
-      description: "A modern Prayer Times app  fast, clean, and easy to use.",
-      tools: "Html,Css,Javascript,React, Axios, and React Router DOM ",
-    },
-    {
-      id: 5,
-      title: "Foodies Project",
-      path: "https://github.com/AhmedShawkyDev/foodies-project",
-      description: "A responsive recipe website showcasing various dishes with individual pages for each recipe.",
-      tools: "Next.js, React, CSS, useRef, Custom Forms",
-    },
-    {
-      id: 6,
-      title: "React Posts",
-      path: "https://github.com/AhmedShawkyDev/ReactPoster",
-      description: "A React-based app allowing users to create and view posts on the page via a modal form.",
-      tools: "React, React DOM (loader & action), Custom Modal Forms",
-    },
+
   ]
   return (
     <div className="flex flex-col gap-12 mb-32">
       <div className="flex gap-2 ">
         <span className="text-primary text-3xl font-medium">#</span>
-        <h1 className="text-foreground text-3xl font-medium">Complete Projects</h1>
+        <h1 className="text-foreground text-3xl font-medium">{t2("complete")}</h1>
       </div>
 
       <div className="grid grid-cols-3 gap-4">
@@ -102,7 +83,7 @@ export default function CompleteSection() {
 
       <div className="flex gap-2 ">
         <span className="text-primary text-3xl font-medium">#</span>
-        <h1 className="text-foreground text-3xl font-medium">Small Apps</h1>
+        <h1 className="text-foreground text-3xl font-medium">{t2("small")}</h1>
       </div>
 
       <div className="grid grid-cols-3 gap-4">

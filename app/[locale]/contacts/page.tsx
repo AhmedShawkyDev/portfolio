@@ -7,11 +7,11 @@ import PageTitle from "@/src/components/page-title";
 export default function Contacts() {
   // const t = useTranslations("contacts");
   return (
-    <Container className="mt-14 items-start! gap-16">
+    <Container className="mt-14 items-start! gap-16 mb-28">
       <PageTitle title="Contacts" description="Who am i?" />
       <div className="flex justify-between items-center w-full">
-        <div className="w-1/2">
-          <p className="text-primary-text font-medium text-lg ">
+        <div className="w-1/2  ">
+          <p className="text-primary-text font-medium text-3xl leading-relaxed ">
             I’m currently seeking a front-end developer position or freelance opportunity.
             However, if you have other request or question, don’t hesitate to contact me.</p>
         </div>

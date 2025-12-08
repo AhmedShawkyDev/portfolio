@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
+
 export default function MyHoppies() {
+  const t = useTranslations("about")
   const hoppies = [
-    { id: 1, title: "Learning New Tools" },
+    { id: 1, title: t("learning") },
     { id: 2, title: "Coding" },
     { id: 3, title: "fitness/gym" },
     { id: 4, title: "Gaming" },
@@ -11,7 +14,7 @@ export default function MyHoppies() {
     <div className="flex flex-col gap-6 w-full ">
       <div className="flex flex-row items-center gap-5">
         <h1 className="text-4xl text-foreground font-semibold flex gap-2 ">
-          <span className="text-primary ">#</span> My Hoppies</h1>
+          <span className="text-primary ">#</span> {t("hobbies")}</h1>
       </div>
       <ul className="flex gap-4">
         {hoppies.map((item) => (

@@ -1,9 +1,8 @@
-import Container from "../container";
-import Dots from "../dots";
+import { useTranslations } from "next-intl";
 import SkillsCard from "../skills-card";
 
 export default function SkillsSection() {
-
+  const t = useTranslations("about")
   const Lang = [
     { id: 1, title: "JavaScript" },
     { id: 2, title: "TypeScript" },
