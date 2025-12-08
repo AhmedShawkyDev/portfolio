@@ -15,7 +15,7 @@ export default function AboutMeSection() {
       <SectionTitle title={t("about")} />
 
       <div className="flex w-full justify-between items-center flex-col lg:flex-row gap-4" >
-        <div className="flex flex-col gap-7 w-full lg:w-1/2">
+        <div className="flex flex-col gap-7 w-full xl:w-1/2">
           <div className=" flex flex-col gap-4">
             <p className="text-xl text-foreground font-medium">{t("hello")}</p>
             <p className="text-xl text-primary-text font-medium">
@@ -32,7 +32,7 @@ export default function AboutMeSection() {
           </Link>
         </div>
 
-        <div className="w-full lg:w-1/2 flex justify-end">
+        <div className="w-full lg:w-2/3 flex justify-center xl:justify-end">
           <Image src={heroo} alt="Ahmed Shawky" width={400} height={400} />
         </div>
 

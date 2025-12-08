@@ -39,10 +39,10 @@ export default function ProjectSection() {
   ]
 
   return (
-    <Container className=" w-full h-fit xl:h-screen gap-14">
+    <Container className=" w-full h-fit xl:h-screen gap-14 lg:mt-0">
       <div className="flex flex-col lg:flex-row justify-between! items-center gap-6 w-full ">
         <SectionTitle title={t("projects")} />
-        <Link href={`${locale}/projects`} className="text-lg flex items-center flex-nowrap w-full">{t("view")}
+        <Link href={`${locale}/projects`} className="text-lg xl:flex items-center flex-nowrap w-1/4 hidden ">{t("view")}
           {locale === "en" ? <RiArrowRightDoubleLine /> : <RiArrowLeftDoubleLine />}
         </Link>
       </div>
