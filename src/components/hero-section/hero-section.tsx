@@ -6,9 +6,6 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 
-
-
-
 export default function HeroSection() {
   const t = useTranslations("herosection");
   const locale = useLocale();
@@ -37,7 +34,7 @@ export default function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             download={true}
-            href="https://drive.google.com/file/d/1n-6YfCf1I5TKtAHNXBIzCNHgY-FpfNUh/view?usp=sharing">Download <FaCloudDownloadAlt /></a>
+            href="https://drive.google.com/file/d/1n-6YfCf1I5TKtAHNXBIzCNHgY-FpfNUh/view?usp=sharing">{t("download")} <FaCloudDownloadAlt /></a>
         </div>
       </div>
       <Link

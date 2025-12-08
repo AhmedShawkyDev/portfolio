@@ -4,10 +4,10 @@ export default function MyHoppies() {
   const t = useTranslations("about")
   const hoppies = [
     { id: 1, title: t("learning") },
-    { id: 2, title: "Coding" },
-    { id: 3, title: "fitness/gym" },
-    { id: 4, title: "Gaming" },
-    { id: 5, title: "Anime" },
+    { id: 2, title: t("coding") },
+    { id: 3, title: t("fitness") },
+    { id: 4, title: t("gaming") },
+    { id: 5, title: t("anime") },
 
   ]
   return (

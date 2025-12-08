@@ -10,10 +10,11 @@ import PageTitle from "@/src/components/page-title";
 
 export default function AboutPage() {
   const t = useTranslations("about_section");
+  const t2 = useTranslations("about");
 
   return (
     <Container className="mt-14 items-start! gap-16 ">
-      <PageTitle title="About me" description="Who am I ?" />
+      <PageTitle title={t2("about_me")} description={t2("who")} />
       <div className="flex w-full justify-between items-center">
         <div className="flex flex-col gap-7 w-1/2">
           <div className=" flex flex-col gap-6">
