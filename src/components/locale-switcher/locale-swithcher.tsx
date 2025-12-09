@@ -8,10 +8,14 @@ export default function LocaleSwitcher({ locale }: { locale: string }) {
   const newPath = `/${oppositeLocale}${pathname.replace(/^\/(en|ar)/, "")}`;
 
   return (
-    <div className="flex">
-      <a href={newPath} >
-        <span className="text-white">{oppositeLocale.toUpperCase()}</span>
-      </a>
+    <div className="flex px-3 py-2">
+      <button
+        className="cursor-pointer text-white"
+        aria-label={`Switch language to ${oppositeLocale.toUpperCase()}`}
+        onClick={() => window.location.href = newPath}>
+        {oppositeLocale.toUpperCase()}
+      </button>
+
     </div>
   )
 }
