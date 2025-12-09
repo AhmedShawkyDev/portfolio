@@ -1,8 +1,6 @@
 import Link from "next/link";
-import Container from "../container";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
-import heroo from "@/src/assets/hero2.png";
 import { RiArrowLeftDoubleLine, RiArrowRightDoubleLine } from "react-icons/ri";
 import SectionTitle from "../section-title";
 export default function AboutMeSection() {
@@ -13,7 +11,6 @@ export default function AboutMeSection() {
 
     <div className=" flex flex-col w-full h-fit xl:h-screen gap-14">
       <SectionTitle title={t("about")} />
-
       <div className="flex w-full justify-between items-center flex-col lg:flex-row gap-4" >
         <div className="flex flex-col gap-7 w-full xl:w-1/2">
           <div className=" flex flex-col gap-4">
@@ -33,7 +30,12 @@ export default function AboutMeSection() {
         </div>
 
         <div className="w-full lg:w-2/3 flex justify-center xl:justify-end">
-          <Image src={heroo} alt="Ahmed Shawky" width={400} height={400} />
+          <Image src={`https://res.cloudinary.com/dn2fdxtad/image/upload/v1765282056/hero2_g3wmou.webp`}
+            alt="Ahmed Shawky"
+            width={400}
+            height={400}
+            priority
+            fetchPriority="high" />
         </div>
 
       </div>

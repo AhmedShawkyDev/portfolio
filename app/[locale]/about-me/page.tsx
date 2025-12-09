@@ -7,6 +7,7 @@ import MyHoppies from "@/src/components/about/my-hoppies";
 import Graduation from "@/src/components/about/graduation";
 import OtherSkills from "@/src/components/about/other-skills";
 import PageTitle from "@/src/components/page-title";
+import MotionComp from "@/src/lib/motion-component";
 
 export default function AboutPage() {
   const t = useTranslations("about_section");
@@ -15,25 +16,31 @@ export default function AboutPage() {
   return (
     <Container className="mt-14 items-start! gap-16 ">
       <PageTitle title={t2("about_me")} description={t2("who")} />
-      <div className="flex flex-col lg:flex-row w-full justify-between items-center gap-10">
-        <div className="flex flex-col gap-10 w-full lg:w-1/2">
-          <div className=" flex flex-col gap-6">
-            <p className="text-xl text-foreground font-medium">{t("hello")}</p>
-            <p className="text-xl text-primary-text font-medium">
-              {t("study")}
-            </p>
-            <p className="text-xl text-primary-text font-medium">
-              {t("trans")}
-            </p>
+      <MotionComp>
+        <div className="flex flex-col lg:flex-row w-full justify-between items-center gap-10">
+          <div className="flex flex-col gap-10 w-full lg:w-1/2">
+            <div className=" flex flex-col gap-6">
+              <p className="text-xl text-foreground font-medium">{t("hello")}</p>
+              <p className="text-xl text-primary-text font-medium">
+                {t("study")}
+              </p>
+              <p className="text-xl text-primary-text font-medium">
+                {t("trans")}
+              </p>
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 flex justify-center xl:justify-end">
+            <Image src={heroo} alt="Ahmed Shawky" width={400} height={400} />
           </div>
         </div>
-        <div className="w-full lg:w-1/2 flex justify-center xl:justify-end">
-          <Image src={heroo} alt="Ahmed Shawky" width={400} height={400} />
-        </div>
-      </div>
-      <SkillsSection />
+      </MotionComp>
+      <MotionComp>
+        <SkillsSection />
+      </MotionComp>
       <MyHoppies />
-      <Graduation />
+      <MotionComp>
+        <Graduation />
+      </MotionComp>
       <OtherSkills />
     </Container>
   );

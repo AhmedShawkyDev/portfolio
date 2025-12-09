@@ -13,6 +13,7 @@ export default function ThemeToggle() {
 
   return (
     <button
+      aria-label="Toggle theme"
       onClick={Toggle}
       className="px-3 py-2 text-yellow-500 rounded cursor-pointer"
     >

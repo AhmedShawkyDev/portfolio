@@ -8,6 +8,7 @@ import rh from "@/src/assets/r_h.png"
 import roia from "@/src/assets/roia.png"
 import agilova from "@/src/assets/agilova.png"
 import SectionTitle from "../section-title";
+import MotionComp from "@/src/lib/motion-component";
 
 export default function ProjectSection() {
 
@@ -39,6 +40,7 @@ export default function ProjectSection() {
   ]
 
   return (
+
     <Container className=" w-full h-fit xl:h-screen gap-14 lg:mt-0">
       <div className="flex flex-col lg:flex-row justify-between! items-center gap-6 w-full ">
         <SectionTitle title={t("projects")} />
@@ -46,6 +48,7 @@ export default function ProjectSection() {
           {locale === "en" ? <RiArrowRightDoubleLine /> : <RiArrowLeftDoubleLine />}
         </Link>
       </div>
+      <MotionComp>
       <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
         {projects.map((project) => {
           return <Card key={project.id}
@@ -56,7 +59,9 @@ export default function ProjectSection() {
             tools={project.tools} />;
         })}
       </div>
+      </MotionComp>
     </Container>
+
   )
 }
 

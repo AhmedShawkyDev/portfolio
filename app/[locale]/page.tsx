@@ -4,10 +4,11 @@ import Container from "@/src/components/container";
 import HeroSection from "@/src/components/hero-section/hero-section";
 import ProjectSection from "@/src/components/project-section/project-section";
 
+
 export default function Page() {
 
   return (
-    <Container className="flex flex-col gap-20 lg:gap-28 mt-10">
+    <Container className="flex flex-col gap-20  ">
       <HeroSection />
       <ProjectSection />
       <AboutMeSection />
