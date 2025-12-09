@@ -2,7 +2,6 @@ import "./globals.css";
 import { Fira_Code, Cairo } from "next/font/google";
 import { headers } from "next/headers";
 import { routing } from "@/routing";
-// import LocaleSwitcher from "@/components/locale-switcher";
 
 const fira = Fira_Code({
   subsets: ["latin"],
@@ -16,8 +15,6 @@ const cairo = Cairo({
   variable: "--font-cairo",
   display: "swap",
 })
-
-
 
 export const metadata = {
   title: "Ahmed Shawky | Portfolio",

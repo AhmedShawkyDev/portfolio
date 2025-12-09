@@ -4,7 +4,6 @@ import Container from "@/src/components/container";
 import HeroSection from "@/src/components/hero-section/hero-section";
 import ProjectSection from "@/src/components/project-section/project-section";
 
-
 export default function Page() {
 
   return (

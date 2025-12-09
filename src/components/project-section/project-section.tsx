@@ -4,9 +4,6 @@ import { useLocale, useTranslations } from "next-intl";
 import { RiArrowLeftDoubleLine, RiArrowRightDoubleLine } from "react-icons/ri";
 import Container from "../container";
 import Card from "../card";
-import rh from "@/src/assets/r_h.png"
-import roia from "@/src/assets/roia.png"
-import agilova from "@/src/assets/agilova.png"
 import SectionTitle from "../section-title";
 import MotionComp from "@/src/lib/motion-component";
 
@@ -19,21 +16,21 @@ export default function ProjectSection() {
     {
       id: 1, title: t("projects_data.0.title"),
       path: "https://rhcapital.ae/en",
-      image: rh,
+      image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/r_h_sefozp.webp`,
       description: t("projects_data.0.description"),
       tools: t("projects_data.0.tools"),
     },
     {
       id: 2, title: t("projects_data.1.title"),
       path: "https://roia.ae/en",
-      image: roia,
+      image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/roia_ue4ix6.webp`,
       description: t("projects_data.1.description"),
       tools: t("projects_data.1.tools"),
     },
     {
       id: 3, title: t("projects_data.2.title"),
       path: "https://agilova.com/",
-      image: agilova,
+      image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/agilova_jcs8gv.webp`,
       description: t("projects_data.2.description"),
       tools: t("projects_data.2.tools"),
     }
@@ -49,16 +46,16 @@ export default function ProjectSection() {
         </Link>
       </div>
       <MotionComp>
-      <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
-        {projects.map((project) => {
-          return <Card key={project.id}
-            title={project.title}
-            path={project.path}
-            image={project.image}
-            description={project.description}
-            tools={project.tools} />;
-        })}
-      </div>
+        <div className="grid lg:grid-cols-3 gap-4 grid-cols-1 md:grid-cols-2">
+          {projects.map((project) => {
+            return <Card key={project.id}
+              title={project.title}
+              path={project.path}
+              image={project.image}
+              description={project.description}
+              tools={project.tools} />;
+          })}
+        </div>
       </MotionComp>
     </Container>
 

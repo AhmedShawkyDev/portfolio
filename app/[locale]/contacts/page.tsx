@@ -1,5 +1,3 @@
-// import { useTranslations } from "next-intl";
-
 import Container from "@/src/components/container";
 import Form from "@/src/components/form/form";
 import PageTitle from "@/src/components/page-title";

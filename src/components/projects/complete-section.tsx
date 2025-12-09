@@ -1,39 +1,36 @@
 import { useTranslations } from "next-intl";
-import rh from "@/src/assets/r_h.png"
-import roia from "@/src/assets/roia.png"
-import agilova from "@/src/assets/agilova.png"
 import Card from "../card";
-import portfolio from "@/src/assets/portifolio.png"
 
 export default function CompleteSection() {
+
   const t = useTranslations("projects_section");
   const t2 = useTranslations("projects");
   const projects = [
     {
       id: 1, title: t("projects_data.0.title"),
       path: "https://rhcapital.ae/en",
-      image: rh,
+      image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/r_h_sefozp.webp`,
       description: t("projects_data.0.description"),
       tools: t("projects_data.0.tools"),
     },
     {
       id: 2, title: t("projects_data.1.title"),
       path: "https://roia.ae/en",
-      image: roia,
+      image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/roia_ue4ix6.webp`,
       description: t("projects_data.1.description"),
       tools: t("projects_data.1.tools"),
     },
     {
       id: 3, title: t("projects_data.2.title"),
       path: "https://agilova.com/",
-      image: agilova,
+      image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/agilova_jcs8gv.webp`,
       description: t("projects_data.2.description"),
       tools: t("projects_data.2.tools"),
     },
     {
       id: 4, title: "Portfolio",
       path: "https://agilova.com/",
-      image: portfolio,
+      image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/portifolio_nrmpum.webp`,
       description: t2("proto"),
       tools: "React , typescript and Tailwind CSS with framework Next.js",
     }

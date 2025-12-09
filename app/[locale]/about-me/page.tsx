@@ -1,7 +1,6 @@
 import Container from "@/src/components/container";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import heroo from "@/src/assets/hero2.png";
 import SkillsSection from "@/src/components/skills-section/skills-section";
 import MyHoppies from "@/src/components/about/my-hoppies";
 import Graduation from "@/src/components/about/graduation";
@@ -39,13 +38,9 @@ export default function AboutPage() {
           </div>
         </div>
       </MotionComp>
-      <MotionComp>
-        <SkillsSection />
-      </MotionComp>
+      <SkillsSection />
       <MyHoppies />
-      <MotionComp>
-        <Graduation />
-      </MotionComp>
+      <Graduation />
       <OtherSkills />
     </Container>
   );

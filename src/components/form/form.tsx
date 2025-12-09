@@ -1,50 +1,6 @@
-// "use client";
-// import { useState } from "react";
 
 import { useTranslations } from "next-intl";
 import InputField from "./input-field";
-
-// export default function ContactForm() {
-//   const [success, setSuccess] = useState(false);
-
-//   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-//     e.preventDefault(); // يمنع الصفحة من إعادة التحميل
-
-//     const formData = new FormData(e.currentTarget);
-
-//     const response = await fetch("https://formsubmit.co/ahmed.shawky.elnabawy@gmail.com", {
-//       method: "POST",
-//       body: formData,
-//       headers: {
-//         Accept: "application/json",
-//       },
-//     });
-
-//     if (response.ok) {
-//       setSuccess(true);
-//       e.currentTarget.reset();
-//     } else {
-//       alert("Something went wrong. Try again!");
-//     }
-//   };
-//   console.log("success", success);
-
-//   return (
-//     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-//       <input type="text" name="name" required placeholder="Your Name" />
-//       <input type="email" name="email" required placeholder="Your Email" />
-//       <input type="text" name="title" required placeholder="Title" />
-//       <textarea name="message" required placeholder="Message"></textarea>
-
-//       <button type="submit" className="bg-primary text-white px-4 py-2">Submit</button>
-
-//       {success && <p className="text-green-500 mt-2">Message sent successfully!</p>}
-//     </form>
-//   );
-// }
-
-
-
 
 export default function Form() {
   const t = useTranslations("contacts");
