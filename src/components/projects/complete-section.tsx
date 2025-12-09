@@ -29,7 +29,7 @@ export default function CompleteSection() {
     },
     {
       id: 4, title: "Portfolio",
-      path: "https://agilova.com/",
+      path: "https://portfolio-ncda9zwhh-ahmedshawkys-projects.vercel.app/en",
       image: `https://res.cloudinary.com/dn2fdxtad/image/upload/v1765298688/portifolio_nrmpum.webp`,
       description: t2("proto"),
       tools: "React , typescript and Tailwind CSS with framework Next.js",
