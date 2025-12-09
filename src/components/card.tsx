@@ -1,12 +1,12 @@
 import { useLocale, useTranslations } from "next-intl";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { RiArrowLeftDoubleLine, RiArrowRightDoubleLine } from "react-icons/ri";
 
 interface CardProps {
 
   title: string
   path: string
-  image: StaticImageData
+  image: string
   description: string
   tools: string
 }

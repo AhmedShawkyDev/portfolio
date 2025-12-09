@@ -16,7 +16,7 @@ export default function SideSocial() {
         {social.map((icons) => {
           return (
             <li key={icons.id} className={`hover:text-primary w-8 h-8 ${locale === "ar" ? "mr-3.5" : "ml-3.5"}`}>
-              <a href={icons.path} target="_blank" rel="noopener noreferrer">{icons.icon}</a>
+              <a href={icons.path} target="_blank" rel="noopener noreferrer " aria-label={icons.name}>{icons.icon}</a>
             </li>
           )
         })}

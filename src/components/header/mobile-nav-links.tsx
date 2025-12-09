@@ -25,7 +25,7 @@ export default function MobileNavLinks({ data, closeMenu }: NavLinksProps) {
             onClick={closeMenu}
           >
             <span className="text-primary"># </span>
-            <Link href={item.path}>{item.name}</Link>
+            <Link href={item.path} aria-label={`Go to ${item.name}`}>{item.name}</Link>
           </li>
         ))}
       </ul>

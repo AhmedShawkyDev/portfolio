@@ -9,9 +9,13 @@ export default function LocaleSwitcher({ locale }: { locale: string }) {
 
   return (
     <div className="flex px-3 py-2">
-      <a href={newPath} >
-        <span className={`text-white cursor-pointer `}>{oppositeLocale.toUpperCase()}</span>
-      </a>
+      <button
+        className="cursor-pointer text-white"
+        aria-label={`Switch language to ${oppositeLocale.toUpperCase()}`}
+        onClick={() => window.location.href = newPath}>
+        {oppositeLocale.toUpperCase()}
+      </button>
+
     </div>
   )
 }
