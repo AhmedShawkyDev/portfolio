@@ -30,7 +30,12 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center xl:justify-end">
-            <Image src={heroo} alt="Ahmed Shawky" width={400} height={400} />
+            <Image src={`https://res.cloudinary.com/dn2fdxtad/image/upload/v1765294417/herooo_kjjt87.webp`}
+              alt="Ahmed Shawky"
+              width={400}
+              height={400}
+              priority
+              fetchPriority="high" />
           </div>
         </div>
       </MotionComp>

@@ -30,7 +30,7 @@ export default function AboutMeSection() {
         </div>
 
         <div className="w-full lg:w-2/3 flex justify-center xl:justify-end">
-          <Image src={`https://res.cloudinary.com/dn2fdxtad/image/upload/v1765282056/hero2_g3wmou.webp`}
+          <Image src={`https://res.cloudinary.com/dn2fdxtad/image/upload/v1765294417/herooo_kjjt87.webp`}
             alt="Ahmed Shawky"
             width={400}
             height={400}
