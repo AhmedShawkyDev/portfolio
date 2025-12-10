@@ -12,7 +12,7 @@ export default function HeroSection() {
   const locale = useLocale();
 
   return (
-    <Container className="lg:flex-row gap-5 justify-between w-full h-fit xl:h-screen  lg:mt-0">
+    <Container className="lg:flex-row gap-5 justify-between w-full h-fit xl:h-screen  mt-10! lg:mt-0!">
       <div className="flex flex-col gap-6 lg:w-2/3 w-full">
         <MotionComp className="flex flex-col gap-6">
           <div className="text-2xl xl:text-4xl text-foreground  flex flex-wrap gap-4 font-semibold flex-col">
