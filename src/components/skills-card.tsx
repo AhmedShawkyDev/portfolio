@@ -10,7 +10,7 @@ interface SkillsCardProps {
 
 export default function SkillsCard({ data, name }: SkillsCardProps) {
   return (
-    <div className="border border-primary-text h-fit w-[90%] lg:w-full">
+    <div className="border border-primary-text h-full w-[90%] lg:w-full ">
       <p className="p-2 text-foreground text-lg font-semibold">{name}</p>
       <div className="w-full h-px bg-grey"></div>
 
