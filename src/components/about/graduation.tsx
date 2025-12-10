@@ -4,13 +4,34 @@ import SubTitlePage from "./sub-title-page"
 export default function Graduation() {
   const t = useTranslations("about")
   const graduation = [
-    { id: 1, title: t("faulty"), description: t("graduated") },
-    { id: 2, title: t("it"), description: t("full") },
+    // { id: 1, title: t("faulty"), description: t("graduated") },
+    { id: 1, title: t("faulty"), description: t("License") },
+
   ]
-  return (
+  const Certificate = [
+    // { id: 1, title: t("faulty"), description: t("graduated") },
+    { id: 1, title: t("it"), description: t("full") }, ,
+
+  ]
+  return (<>
     <div className="flex flex-col w-full gap-6">
       <div className="flex flex-row justify-between! items-center gap-6 w-full">
-        <SubTitlePage title={t("certifications")} />
+        <SubTitlePage title={t("Certificate")} />
+      </div>
+      {Certificate.map((items) => {
+        return (
+          <div key={items?.id} className="flex flex-col" >
+            <span className="text-foreground text-xl font-semibold "> -- {items?.title}</span>
+            <p className=" text-primary-text text-lg font-medium">
+              {items?.description}
+            </p>
+          </div>
+        )
+      })}
+    </div>
+    <div className="flex flex-col w-full gap-6">
+      <div className="flex flex-row justify-between! items-center gap-6 w-full">
+        <SubTitlePage title={t("Education")} />
       </div>
       {graduation.map((item) => {
         return (
@@ -23,5 +44,7 @@ export default function Graduation() {
         )
       })}
     </div>
+
+  </>
   )
 }

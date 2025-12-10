@@ -79,6 +79,22 @@ export default function SkillsSection() {
     { id: 5, title: "React Router Dom" },
     { id: 6, title: "Framer Motion" },
   ]
+
+  const SkillsCards = [
+    { id: 1, data: Lang, name: t("Fundamental") },
+    { id: 2, Other: Other, name: t("Programming") },
+    { id: 3, data: Tool, name: t("JavaScriptF") },
+    { id: 4, data: Framwork, name: t("State") },
+    { id: 5, data: CSSFrameworks, name: t("CSSFrameworks") },
+    { id: 6, data: CompLibraries, name: t("Component") },
+    { id: 7, data: BuildTools, name: t("Build") },
+    { id: 8, data: VersionControl, name: t("Version") },
+    { id: 9, data: APIIntegration, name: t("APIIntegration") },
+    { id: 10, data: responsive, name: t("Responsive") },
+    { id: 11, data: CodeQuality, name: t("CodeQuality") },
+    { id: 12, data: SoftSkills, name: t("Soft") },
+    { id: 13, data: Libraries, name: t("Libraries") },
+  ]
   return (
     <div className="flex flex-col w-full gap-14">
       <div className="flex flex-row justify-between! items-center gap-6 w-full">
@@ -87,27 +103,10 @@ export default function SkillsSection() {
             <span className="text-primary ">#</span> {t("skills")}</h1>
         </div>
       </div>
-      {/* <div className="flex justify-center w-full gap-4 "> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* <SkillsCard data={Lang} name={t("languages")} />
-        <SkillsCard data={Other} name={t("other")} />
-        <SkillsCard data={Framwork} name={t("framworks")} />
-        <SkillsCard data={Tool} name={t("tools")} /> */}
-
-        <SkillsCard data={Lang} name="Fundamental Web Technologies" />
-        <SkillsCard data={Other} name="Programming Languages & Scripting" />
-        <SkillsCard data={Tool} name="JavaScript Frameworks & Related" />
-        <SkillsCard data={Framwork} name="State Management" />
-        <SkillsCard data={CSSFrameworks} name="CSS Frameworks" />
-        <SkillsCard data={CompLibraries} name="Component Libraries" />
-        <SkillsCard data={BuildTools} name="Build Tools & Package Managers" />
-        <SkillsCard data={VersionControl} name="Version Control & Collaboration" />
-        <SkillsCard data={APIIntegration} name="API Integration" />
-        <SkillsCard data={responsive} name="Responsive" />
-        <SkillsCard data={CodeQuality} name="Code Quality & Best Practices" />
-        <SkillsCard data={SoftSkills} name="Soft Skills" />
-        <SkillsCard data={Libraries} name="Libraries" />
-
+        {SkillsCards.map((card) => (
+          <SkillsCard key={card.id} data={card.data || card.Other} name={card.name} />
+        ))}
       </div>
     </div >
   );

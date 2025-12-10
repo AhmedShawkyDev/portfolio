@@ -11,7 +11,7 @@ export default function OtherSkills() {
   return (
     <div className="flex flex-col w-full gap-6 mb-40">
       <div className="flex flex-row justify-between! items-center gap-6 w-full">
-        <SubTitlePage title={t("skills")} />
+        <SubTitlePage title={t("OtherSkills")} />
       </div>
       <ul className="flex flex-col">
         {other.map((item) => (
