@@ -34,7 +34,7 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               download={true}
-              href="https://drive.google.com/file/d/1n-6YfCf1I5TKtAHNXBIzCNHgY-FpfNUh/view?usp=sharing">{t("download")} <FaCloudDownloadAlt /></a>
+              href="https://drive.google.com/file/d/1dk-HORa65PJA8k-69BCgMG9B074_ADi-/view?usp=sharing">{t("download")} <FaCloudDownloadAlt /></a>
           </div>
         </MotionComp>
       </div>
